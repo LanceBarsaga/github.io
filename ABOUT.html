@@ -92,7 +92,7 @@
       height: 100%;
 }
 
-.navbar a.active {
+    .navbar a.active {
       height: 3vw;
       width: 8vw;
       background: #04a1a1;
@@ -102,6 +102,37 @@
       margin-top: -1vw;
       margin-left: -1vw;
   }
+
+    .close-button {
+      position: relative;
+      height: 3vw;
+      width: 8vw;
+      font-size: 0.9vw;
+      text-align: center;
+      background: #001f1f;
+      color: #58c1cf;
+      padding: 15px;
+      border-radius: 25px;
+      font-weight: bold;
+      box-shadow: 0 0 10px #58c1cf;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .close-button:hover {
+      background-color: #58c1cf;
+      color: #001f1f;
+      box-shadow: 0 0 15px #58c1cf;
+    }
+
+    .close-button a {
+      letter-spacing: .1vw;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      width: 100%;
+      height: 100%;
+}
 /* =============-------------about page============================================*/
 
 .picture-container {
@@ -304,6 +335,301 @@ margin-left: -1vw;
     margin-left: 30vw;
 }
 
+/* =================== RESPONSIVE FOR TABLETS =================== */
+@media (max-width: 1024px) {
+
+
+ .bg img{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2vw;
+  }
+
+  .Avatar img {
+    height: 10vw;
+    width: 10vw;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+  .nav-container {
+
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2vw;
+  }
+
+  .Avatar img {
+    height: 10vw;
+    width: 10vw;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 13vw;
+    margin-top: 2vw;
+    gap: 10px;
+    transform: translateY(-7vw);
+  }
+
+  .nav-button { 
+    width: 15vw;
+    height: 5vw;
+    font-size: 1.5vw;
+    padding: 10px 15px;
+  }
+
+  .nav-button a {
+    font-size: 1.5vw;
+    letter-spacing: .1vw;
+  }
+
+      .nav-button:hover {
+      background-color: #58c1cf;
+      color: #001f1f;
+      box-shadow: 0 0 15px #58c1cf;
+    }
+
+    .nav-button a {
+      letter-spacing: .1vw;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      width: 100%;
+      height: 100%;
+}
+
+.navbar a.active {
+      
+      height: 5vw;
+      width: 15vw;
+      background: #04a1a1;
+      color: #03262b;
+      padding: 10px;
+      border-radius: 25px;
+      margin-top: -1.5vw;
+      margin-left: -2vw;
+  }
+
+
+.close-button {
+      height: 5vw;
+      width: auto;
+      font-size: 1.5vw;
+      text-align: center;
+      background: #001f1f;
+      color: #58c1cf;
+      padding: 1px;
+      border-radius: 25px;
+      font-weight: bold;
+      box-shadow: 0 0 10px #58c1cf;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .close-button:hover {
+      background-color: #58c1cf;
+      color: #001f1f;
+      box-shadow: 0 0 15px #58c1cf;
+    }
+
+    .close-button a {
+      letter-spacing: .1vw;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      width: 100%;
+      height: 100%;
+}
+
+  .box-container {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 12vw;
+    margin-left: -40vw;
+
+  }
+
+  .profile {
+    transform: translateY(14vw);
+    margin-left: -106vw;
+    width: 23vw;
+    height: 23vw;
+    margin-bottom: 5vw;
+    border-radius: 10px;
+  }
+
+  .text-profile {
+    width: 95%;
+    height: 95%;
+    padding: 10px;
+  }
+
+  .text-profile p {
+    letter-spacing: .1vw;
+    font-size: 1.1vw;
+    margin-top: -1vw;
+  }
+
+  .picture-container {
+    transform: translateY(2vw);
+
+    width: 41vw;
+    height: 24vw;
+    padding: 1vw;
+  }
+
+  .picture1 {
+      position: absolute;
+      background-color: rgba(0, 255, 200, 0.1);
+      padding: 10px;
+      margin-top: .5vw;
+      float: left;
+      border-radius: 15px;
+      width: 12vw;
+      height: 21vw;
+      box-shadow: inset 0 0 10px #58c1cf;
+      color: #58c1cf;
+    }
+    .picture2 {
+      position: absolute;
+      background-color: rgba(0, 255, 200, 0.1);
+      padding: 10px;
+      float: left;
+      margin-top: .5vw;
+      margin-left: 13.5vw;
+      border-radius: 10px;
+      width: 12vw;
+      height: 21vw;
+      box-shadow: inset 0 0 10px #58c1cf;
+      color: #58c1cf;
+    }
+    .picture3 {
+      position: relative;
+      background-color: rgba(0, 255, 200, 0.1);
+      padding: 10px;
+      float: right;
+      margin-top: .5vw;
+      border-radius: 10px;    
+      width: 12vw;
+      height: 21vw;
+      box-shadow: inset 0 0 10px #58c1cf;
+      color: #58c1cf;
+    }
+    .picture4 {
+    position: relative;
+      background-color: rgba(0, 255, 200, 0.1);
+      padding: 10px;
+      float: right;
+      transform: translateY(-11.5vw);
+      margin-left: -65vw;
+      border-radius: 10px;
+      width: 13vw;
+      height: 21vw;
+      box-shadow: inset 0 0 10px #58c1cf;
+      color: #58c1cf;
+    }
+
+    .picture1 img {
+    position: relative;
+    border-radius: 5px;
+    }
+    .picture2 img {
+    position: relative;
+    border-radius: 5px;
+    }
+    .picture3 img {
+    position: relative;
+    border-radius: 5px;
+    }
+
+    .picture4 img {
+    position: relative;
+    border-radius: 5px;
+    }
+
+
+  /* =============------------- about me ============================================*/
+.about {
+  transform: translateY(-70vw);
+  float: left;
+  margin-left: -1vw;
+  margin-top: 2vw;
+  width: 45vw;
+  height: 52vw;
+  background: rgba(0, 255, 200, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 0 10px #00ffe0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me {
+    background-color: #234053;
+    width: 44vw;
+    height: 50vw;
+    border-radius: 20px;
+}
+
+.about-me p {
+    user-select: none;
+    margin-top: 2vw;
+    margin-left: 1vw;
+    color: #58c1cf;
+    font-weight: bold;
+    letter-spacing: .1vw;
+    font-size: 1.3vw;
+}
+
+.RESUME {
+      position: relative;
+      margin-left: -40vw;
+      transform: translateY(-39vw);
+      height: 5vw;
+      width: 15vw;
+      font-size: 2vw;
+      text-align: center;
+      background: #001f1f;
+      color: #58c1cf;
+      padding: 1px;
+      border-radius: 10px;
+      font-weight: bold;
+      box-shadow: 0 0 10px #58c1cf;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .RESUME:hover {
+      background-color: #58c1cf;
+      color: #001f1f;
+      box-shadow: 0 0 15px #58c1cf;
+    }
+
+
+  .footer {
+    height: 7vw;
+    transform: translateY(-66.5vw);
+    width: 42vw;
+    font-size: 1vw;
+    text-align: center;
+    padding: 1vw;
+  }
+  .footer p {
+    margin-top: -2vw;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -328,7 +654,7 @@ margin-left: -1vw;
             <a href="CONTACT.html">CONTACT</a>
         </div>
     </div>
-        <div class="nav-button" style="width: 9vw; margin-top: 1vw;">
+        <div class="close-button" style="width: 9vw; margin-top: 1vw;">
             <i class="bi bi-box-arrow-left" style="margin-right: 1vw;"></i>CLOSE
         </div>
   </div>
@@ -345,6 +671,7 @@ margin-left: -1vw;
 <img src="/Images/about3.jpg">
   </div>
 </div>
+
     <div class="box-container">
         <div class="profile">
           <div class="text-profile">
